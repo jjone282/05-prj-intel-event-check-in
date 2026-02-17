@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -253,9 +254,31 @@ button .fas {
   display: none;
 }
 
+#celebrationMessage {
+  font-weight: 500;
+  font-size: 25px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: #333;
+  margin-bottom: 15px;
+  display: none;
+}
+
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
+}
+
+/* Celebration message */
+#celebrationMessage {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 18px 22px;
+  border-radius: 10px;
+  color: #003c71;
+  background-color: #e8f4fc;
+  margin-bottom: 20px;
+  display: none;
 }
 
 /* Counter */
@@ -346,6 +369,67 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+/* Attendee List */
+.attendee-list {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.attendee-list h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.attendee-list-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 12px 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.attendee-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.attendee-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+.attendee-item:last-child {
+  border-bottom: none;
+}
+
+.attendee-item:hover {
+  background-color: #f8fafc;
+}
+
+.attendee-name {
+  font-weight: 500;
+}
+
+.attendee-team {
+  color: #64748b;
 }
 
 /* Mobile responsive */
